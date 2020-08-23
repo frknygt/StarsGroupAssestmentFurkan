@@ -1,0 +1,118 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-08-23T22:12:58.596Z",
+        "line": 3,
+        "name": "Create and delete a fixture",
+        "description": "",
+        "id": "delete-fixture;create-and-delete-a-fixture",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2950421400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I create a new fixture",
+            "match": {
+              "location": "com.starsGroup.fixture.step_definitions.CreateStepDefs.i_create_a_new_fixture()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "verify status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                }
+              ],
+              "location": "com.starsGroup.fixture.step_definitions.RetrieveStepDefs.verify_status_code_is(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12917400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I delete created fixture by id",
+            "match": {
+              "location": "com.starsGroup.fixture.step_definitions.DeleteStepDefs.i_delete_created_fixture_by_id()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 999100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "verify that \"Fixture has been deleted\" message is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Fixture has been deleted\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.starsGroup.fixture.step_definitions.DeleteStepDefs.verify_that_message_is_displayed(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24392800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I retrieve fixture by id",
+            "match": {
+              "location": "com.starsGroup.fixture.step_definitions.RetrieveStepDefs.i_retrieve_fixture_by_id()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1994400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "verify that \"Fixture not found\" message is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Fixture not found\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.starsGroup.fixture.step_definitions.DeleteStepDefs.verify_that_message_is_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Delete fixture",
+    "description": "",
+    "id": "delete-fixture",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/fixtures/Delete.feature",
+    "tags": []
+  }
+]
