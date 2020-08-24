@@ -42,7 +42,8 @@ formatter.match({
   "location": "com.starsGroup.fixture.step_definitions.RetrieveStepDefs.verify_that_there_are_fixtures(int)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "java.lang.AssertionError: expected:\u003c3\u003e but was:\u003c13\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.starsGroup.fixture.step_definitions.RetrieveStepDefs.verify_that_there_are_fixtures(RetrieveStepDefs.java:34)\r\n\tat ✽.verify that there are 3 fixtures(file:///C:/Users/avfrk/IdeaProjects/StarsGroupAssestmentFurkan/src/test/resources/features/fixtures/Retrieve.feature:6)\r\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "verify that each fixture has a fixtureId value",
@@ -52,6 +53,6 @@ formatter.match({
   "location": "com.starsGroup.fixture.step_definitions.RetrieveStepDefs.verify_that_each_fixture_has_a_fixtureId_value()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 });
