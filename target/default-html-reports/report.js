@@ -1,11 +1,11 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/fixtures/Delete.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/fixtures/Retrieve.feature");
 formatter.feature({
-  "name": "Delete fixture",
+  "name": "Retrieve fixtures",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Create and delete a fixture",
+  "name": "Retrieve all fixtures",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -15,18 +15,18 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "I create a new fixture",
+  "name": "I retrieve all fixtures",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.starsGroup.fixture.step_definitions.CreateStepDefs.i_create_a_new_fixture()"
+  "location": "com.starsGroup.fixture.step_definitions.RetrieveStepDefs.i_retrieve_all_fixtures()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
   "name": "verify status code is 200",
-  "keyword": "And "
+  "keyword": "Then "
 });
 formatter.match({
   "location": "com.starsGroup.fixture.step_definitions.RetrieveStepDefs.verify_status_code_is(int)"
@@ -35,41 +35,21 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I delete created fixture by id",
+  "name": "verify that there are 3 fixtures",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.starsGroup.fixture.step_definitions.DeleteStepDefs.i_delete_created_fixture_by_id()"
+  "location": "com.starsGroup.fixture.step_definitions.RetrieveStepDefs.verify_that_there_are_fixtures(int)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "verify that \"Fixture has been deleted\" message is displayed",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.starsGroup.fixture.step_definitions.DeleteStepDefs.verify_that_message_is_displayed(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I retrieve fixture by id",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.starsGroup.fixture.step_definitions.RetrieveStepDefs.i_retrieve_fixture_by_id()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "verify that \"Fixture not found\" message is displayed",
+  "name": "verify that each fixture has a fixtureId value",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.starsGroup.fixture.step_definitions.DeleteStepDefs.verify_that_message_is_displayed(java.lang.String)"
+  "location": "com.starsGroup.fixture.step_definitions.RetrieveStepDefs.verify_that_each_fixture_has_a_fixtureId_value()"
 });
 formatter.result({
   "status": "passed"

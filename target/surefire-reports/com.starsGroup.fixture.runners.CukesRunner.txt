@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.starsGroup.fixture.runners.CukesRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 6.574 s <<< FAILURE! - in com.starsGroup.fixture.runners.CukesRunner
+Retrieve all fixtures(Retrieve fixtures)  Time elapsed: 5.904 s  <<< ERROR!
+java.net.ConnectException: Connection refused: connect
+

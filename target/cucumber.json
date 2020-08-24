@@ -3,28 +3,29 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-08-23T22:12:58.596Z",
+        "start_timestamp": "2020-08-24T11:17:29.676Z",
         "line": 3,
-        "name": "Create and delete a fixture",
+        "name": "Retrieve all fixtures",
         "description": "",
-        "id": "delete-fixture;create-and-delete-a-fixture",
+        "id": "retrieve-fixtures;retrieve-all-fixtures",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2950421400,
+              "duration": 1337939600,
               "status": "passed"
             },
             "line": 4,
-            "name": "I create a new fixture",
+            "name": "I retrieve all fixtures",
             "match": {
-              "location": "com.starsGroup.fixture.step_definitions.CreateStepDefs.i_create_a_new_fixture()"
+              "location": "com.starsGroup.fixture.step_definitions.RetrieveStepDefs.i_retrieve_all_fixtures()"
             },
             "keyword": "When "
           },
           {
             "result": {
+              "duration": 1994300,
               "status": "passed"
             },
             "line": 5,
@@ -38,65 +39,35 @@
               ],
               "location": "com.starsGroup.fixture.step_definitions.RetrieveStepDefs.verify_status_code_is(int)"
             },
-            "keyword": "And "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 12917400,
+              "duration": 521606200,
               "status": "passed"
             },
             "line": 6,
-            "name": "I delete created fixture by id",
+            "name": "verify that there are 3 fixtures",
             "match": {
-              "location": "com.starsGroup.fixture.step_definitions.DeleteStepDefs.i_delete_created_fixture_by_id()"
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 22
+                }
+              ],
+              "location": "com.starsGroup.fixture.step_definitions.RetrieveStepDefs.verify_that_there_are_fixtures(int)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 999100,
+              "duration": 86768500,
               "status": "passed"
             },
             "line": 7,
-            "name": "verify that \"Fixture has been deleted\" message is displayed",
+            "name": "verify that each fixture has a fixtureId value",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Fixture has been deleted\"",
-                  "offset": 12
-                }
-              ],
-              "location": "com.starsGroup.fixture.step_definitions.DeleteStepDefs.verify_that_message_is_displayed(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 24392800,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "I retrieve fixture by id",
-            "match": {
-              "location": "com.starsGroup.fixture.step_definitions.RetrieveStepDefs.i_retrieve_fixture_by_id()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1994400,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "verify that \"Fixture not found\" message is displayed",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Fixture not found\"",
-                  "offset": 12
-                }
-              ],
-              "location": "com.starsGroup.fixture.step_definitions.DeleteStepDefs.verify_that_message_is_displayed(java.lang.String)"
+              "location": "com.starsGroup.fixture.step_definitions.RetrieveStepDefs.verify_that_each_fixture_has_a_fixtureId_value()"
             },
             "keyword": "Then "
           }
@@ -108,11 +79,11 @@
         ]
       }
     ],
-    "name": "Delete fixture",
+    "name": "Retrieve fixtures",
     "description": "",
-    "id": "delete-fixture",
+    "id": "retrieve-fixtures",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/fixtures/Delete.feature",
+    "uri": "file:src/test/resources/features/fixtures/Retrieve.feature",
     "tags": []
   }
 ]

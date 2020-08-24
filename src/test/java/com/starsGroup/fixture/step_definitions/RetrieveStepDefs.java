@@ -25,13 +25,13 @@ public class RetrieveStepDefs {
 
   @Then("verify status code is {int}")
   public void verify_status_code_is(int status) {
-    assertEquals(SharedObjects.response.statusCode(), status);
+    assertEquals( status,SharedObjects.response.statusCode());
   }
 
   @Then("verify that there are {int} fixtures")
   public void verify_that_there_are_fixtures(int fixturesNumber) {
     List<String> fixtureId = SharedObjects.response.body().path("fixtureId");
-    assertEquals(fixtureId.size(), fixturesNumber);
+    assertEquals(fixturesNumber,fixtureId.size());
   }
 
   @Then("verify that each fixture has a fixtureId value")

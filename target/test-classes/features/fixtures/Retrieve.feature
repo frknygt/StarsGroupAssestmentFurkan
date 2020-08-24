@@ -1,5 +1,5 @@
 Feature: Retrieve fixtures
-
+@wip
   Scenario: Retrieve all fixtures
     When  I retrieve all fixtures
     Then  verify status code is 200

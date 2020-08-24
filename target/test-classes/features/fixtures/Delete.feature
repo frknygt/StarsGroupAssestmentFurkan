@@ -1,5 +1,5 @@
 Feature: Delete fixture
-@wip
+
   Scenario: Create and delete a fixture
     When I create a new fixture
     And verify status code is 200
