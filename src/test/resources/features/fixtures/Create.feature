@@ -1,5 +1,6 @@
+@test
 Feature: Create fixture
- @test
+
   Scenario: Store a new fixture
     Given I create a new fixture
     And verify status code is 200

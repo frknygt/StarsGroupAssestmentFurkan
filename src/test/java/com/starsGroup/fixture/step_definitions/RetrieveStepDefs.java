@@ -39,6 +39,7 @@ public class RetrieveStepDefs {
     Response response = SharedObjects.response;
 
     response.then().assertThat().body("fixtureId", everyItem(notNullValue()));
+
   }
 
   @Given("I create a new fixture by handling the latency")
