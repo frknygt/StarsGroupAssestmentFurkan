@@ -3,121 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-08-25T14:58:56.314Z",
-        "line": 4,
-        "name": "Store a new fixture",
-        "description": "",
-        "id": "create-fixture;store-a-new-fixture",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 6849306900,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "I create a new fixture",
-            "match": {
-              "location": "com.starsGroup.fixture.step_definitions.CreateStepDefs.i_create_a_new_fixture()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1995000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "verify status code is 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 22
-                }
-              ],
-              "location": "com.starsGroup.fixture.step_definitions.RetrieveStepDefs.verify_status_code_is(int)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 997200,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "verify that \"Fixture has been added\" message is displayed",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Fixture has been added\"",
-                  "offset": 12
-                }
-              ],
-              "location": "com.starsGroup.fixture.step_definitions.DeleteStepDefs.verify_that_message_is_displayed(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 8977800,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "I retrieve fixture by id",
-            "match": {
-              "location": "com.starsGroup.fixture.step_definitions.RetrieveStepDefs.i_retrieve_fixture_by_id()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 54877500,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "verify that new fixture\u0027s first object in the teams array has a teamId of \"HOME\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"HOME\"",
-                  "offset": 74
-                }
-              ],
-              "location": "com.starsGroup.fixture.step_definitions.CreateStepDefs.verify_that_new_fixture_s_first_object_in_the_teams_array_has_a_teamId_of(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@test"
-          }
-        ]
-      }
-    ],
-    "name": "Create fixture",
-    "description": "",
-    "id": "create-fixture",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/fixtures/Create.feature",
-    "tags": [
-      {
-        "name": "@test",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "start_timestamp": "2020-08-25T14:59:03.275Z",
+        "start_timestamp": "2020-08-25T15:57:38.161Z",
         "line": 3,
         "name": "Create and delete a fixture",
         "description": "",
@@ -127,19 +13,19 @@
         "steps": [
           {
             "result": {
-              "duration": 1093018700,
+              "duration": 5998702900,
               "status": "passed"
             },
             "line": 4,
             "name": "I create a new fixture",
             "match": {
-              "location": "com.starsGroup.fixture.step_definitions.CreateStepDefs.i_create_a_new_fixture()"
+              "location": "com.starsGroup.fixture.step_definitions.PostFixtureStepDef.i_create_a_new_fixture()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 998300,
+              "duration": 1962300,
               "status": "passed"
             },
             "line": 5,
@@ -151,13 +37,13 @@
                   "offset": 22
                 }
               ],
-              "location": "com.starsGroup.fixture.step_definitions.RetrieveStepDefs.verify_status_code_is(int)"
+              "location": "com.starsGroup.fixture.step_definitions.GetFixtureStepDef.verify_status_code_is(int)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 14958200,
+              "duration": 11006200,
               "status": "passed"
             },
             "line": 6,
@@ -169,6 +55,7 @@
           },
           {
             "result": {
+              "duration": 975000,
               "status": "passed"
             },
             "line": 7,
@@ -186,13 +73,13 @@
           },
           {
             "result": {
-              "duration": 6981900,
+              "duration": 7965600,
               "status": "passed"
             },
             "line": 8,
             "name": "I retrieve fixture by id",
             "match": {
-              "location": "com.starsGroup.fixture.step_definitions.RetrieveStepDefs.i_retrieve_fixture_by_id()"
+              "location": "com.starsGroup.fixture.step_definitions.GetFixtureStepDef.i_retrieve_fixture_by_id()"
             },
             "keyword": "And "
           },
@@ -225,7 +112,7 @@
     "description": "",
     "id": "delete-fixture",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/fixtures/Delete.feature",
+    "uri": "file:src/test/resources/features/fixtures/DeleteFixture.feature",
     "tags": [
       {
         "name": "@test",
@@ -241,29 +128,28 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-08-25T14:59:04.396Z",
+        "start_timestamp": "2020-08-25T15:57:44.228Z",
         "line": 4,
-        "name": "Retrieve all fixtures",
+        "name": "Get all fixtures",
         "description": "",
-        "id": "retrieve-fixtures;retrieve-all-fixtures",
+        "id": "get-fixtures;get-all-fixtures",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 6979300,
+              "duration": 8975600,
               "status": "passed"
             },
             "line": 5,
             "name": "I retrieve all fixtures",
             "match": {
-              "location": "com.starsGroup.fixture.step_definitions.RetrieveStepDefs.i_retrieve_all_fixtures()"
+              "location": "com.starsGroup.fixture.step_definitions.GetFixtureStepDef.i_retrieve_all_fixtures()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 997200,
               "status": "passed"
             },
             "line": 6,
@@ -275,15 +161,14 @@
                   "offset": 22
                 }
               ],
-              "location": "com.starsGroup.fixture.step_definitions.RetrieveStepDefs.verify_status_code_is(int)"
+              "location": "com.starsGroup.fixture.step_definitions.GetFixtureStepDef.verify_status_code_is(int)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: expected:\u003c3\u003e but was:\u003c14\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat com.starsGroup.fixture.step_definitions.RetrieveStepDefs.verify_that_there_are_fixtures(RetrieveStepDefs.java:34)\r\n\tat ✽.verify that there are 3 fixtures(file:///C:/Users/avfrk/IdeaProjects/StarsGroupAssestmentFurkan/src/test/resources/features/fixtures/Retrieve.feature:7)\r\n",
-              "duration": 16956800,
-              "status": "failed"
+              "duration": 13963600,
+              "status": "passed"
             },
             "line": 7,
             "name": "verify that there are 3 fixtures",
@@ -294,19 +179,19 @@
                   "offset": 22
                 }
               ],
-              "location": "com.starsGroup.fixture.step_definitions.RetrieveStepDefs.verify_that_there_are_fixtures(int)"
+              "location": "com.starsGroup.fixture.step_definitions.GetFixtureStepDef.verify_that_there_are_fixtures(int)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 997700,
-              "status": "skipped"
+              "duration": 85784600,
+              "status": "passed"
             },
             "line": 8,
             "name": "verify that each fixture has a fixtureId value",
             "match": {
-              "location": "com.starsGroup.fixture.step_definitions.RetrieveStepDefs.verify_that_each_fixture_has_a_fixtureId_value()"
+              "location": "com.starsGroup.fixture.step_definitions.GetFixtureStepDef.verify_that_each_fixture_has_a_fixtureId_value()"
             },
             "keyword": "Then "
           }
@@ -318,35 +203,35 @@
         ]
       },
       {
-        "start_timestamp": "2020-08-25T14:59:04.433Z",
+        "start_timestamp": "2020-08-25T15:57:44.341Z",
         "line": 10,
-        "name": "Retrieve fixture by handling the latency",
+        "name": "Get fixture by handling the latency",
         "description": "",
-        "id": "retrieve-fixtures;retrieve-fixture-by-handling-the-latency",
+        "id": "get-fixtures;get-fixture-by-handling-the-latency",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2058049500,
+              "duration": 2061794400,
               "status": "passed"
             },
             "line": 11,
             "name": "I create a new fixture by handling the latency",
             "match": {
-              "location": "com.starsGroup.fixture.step_definitions.RetrieveStepDefs.i_create_a_new_fixture_by_handling_the_latency()"
+              "location": "com.starsGroup.fixture.step_definitions.GetFixtureStepDef.i_create_a_new_fixture_by_handling_the_latency()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 11970000,
+              "duration": 7973400,
               "status": "passed"
             },
             "line": 12,
             "name": "I retrieve fixture by id",
             "match": {
-              "location": "com.starsGroup.fixture.step_definitions.RetrieveStepDefs.i_retrieve_fixture_by_id()"
+              "location": "com.starsGroup.fixture.step_definitions.GetFixtureStepDef.i_retrieve_fixture_by_id()"
             },
             "keyword": "When "
           },
@@ -363,7 +248,7 @@
                   "offset": 22
                 }
               ],
-              "location": "com.starsGroup.fixture.step_definitions.RetrieveStepDefs.verify_status_code_is(int)"
+              "location": "com.starsGroup.fixture.step_definitions.GetFixtureStepDef.verify_status_code_is(int)"
             },
             "keyword": "Then "
           }
@@ -375,11 +260,125 @@
         ]
       }
     ],
-    "name": "Retrieve fixtures",
+    "name": "Get fixtures",
     "description": "",
-    "id": "retrieve-fixtures",
+    "id": "get-fixtures",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/fixtures/Retrieve.feature",
+    "uri": "file:src/test/resources/features/fixtures/GetFixture.feature",
+    "tags": [
+      {
+        "name": "@test",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-08-25T15:57:46.416Z",
+        "line": 4,
+        "name": "Store a new fixture",
+        "description": "",
+        "id": "post-fixture;store-a-new-fixture",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3054276100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I create a new fixture",
+            "match": {
+              "location": "com.starsGroup.fixture.step_definitions.PostFixtureStepDef.i_create_a_new_fixture()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1994700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "verify status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                }
+              ],
+              "location": "com.starsGroup.fixture.step_definitions.GetFixtureStepDef.verify_status_code_is(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 997400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "verify that \"Fixture has been added\" message is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Fixture has been added\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.starsGroup.fixture.step_definitions.DeleteStepDefs.verify_that_message_is_displayed(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12963700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I retrieve fixture by id",
+            "match": {
+              "location": "com.starsGroup.fixture.step_definitions.GetFixtureStepDef.i_retrieve_fixture_by_id()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 55849900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "verify that new fixture\u0027s first object in the teams array has a teamId of \"HOME\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"HOME\"",
+                  "offset": 74
+                }
+              ],
+              "location": "com.starsGroup.fixture.step_definitions.PostFixtureStepDef.verify_that_new_fixture_s_first_object_in_the_teams_array_has_a_teamId_of(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Post fixture",
+    "description": "",
+    "id": "post-fixture",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/fixtures/PostFixture.feature",
     "tags": [
       {
         "name": "@test",

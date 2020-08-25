@@ -1,11 +1,11 @@
 com\starsGroup\fixture\dto\fixtures\response\Team.class
 com\starsGroup\fixture\utilities\SharedObjects.class
-com\starsGroup\fixture\step_definitions\RetrieveStepDefs.class
 com\starsGroup\fixture\step_definitions\DeleteStepDefs.class
 com\starsGroup\fixture\dto\fixtures\response\FootballFullState.class
 com\starsGroup\fixture\dto\fixtures\response\RetrieveFixtureResponse.class
-com\starsGroup\fixture\step_definitions\CreateStepDefs.class
+com\starsGroup\fixture\step_definitions\PostFixtureStepDef.class
 com\starsGroup\fixture\dto\fixtures\request\CreateFixtureRequest.class
 com\starsGroup\fixture\utilities\Requests.class
 com\starsGroup\fixture\runners\CukesRunner.class
 com\starsGroup\fixture\utilities\ConfigurationReader.class
+com\starsGroup\fixture\step_definitions\GetFixtureStepDef.class

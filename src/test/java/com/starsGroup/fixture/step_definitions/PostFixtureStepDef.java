@@ -9,7 +9,7 @@ import io.cucumber.java.en.*;
 
 import static org.junit.Assert.*;
 
-public class CreateStepDefs {
+public class PostFixtureStepDef {
 
   String fixtureApi = ConfigurationReader.get("fixture_api");
 
@@ -22,8 +22,7 @@ public class CreateStepDefs {
   }
 
   @Then("verify that new fixture's first object in the teams array has a teamId of {string}")
-  public void verify_that_new_fixture_s_first_object_in_the_teams_array_has_a_teamId_of(
-      String expectedTeamId) {
+  public void verify_that_new_fixture_s_first_object_in_the_teams_array_has_a_teamId_of(String expectedTeamId) {
     String actualTeamId =
         SharedObjects.response
             .body()

@@ -14,7 +14,7 @@ import java.util.concurrent.TimeoutException;
 import static org.junit.Assert.*;
 import static org.hamcrest.Matchers.*;
 
-public class RetrieveStepDefs {
+public class GetFixtureStepDef {
 
   String fixtureApi = ConfigurationReader.get("fixture_api");
 

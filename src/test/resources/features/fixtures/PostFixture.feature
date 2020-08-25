@@ -1,5 +1,5 @@
 @test
-Feature: Create fixture
+Feature: Post fixture
 
   Scenario: Store a new fixture
     Given I create a new fixture
